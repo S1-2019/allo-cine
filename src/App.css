@@ -12,20 +12,18 @@
   --orange: #f87624;
   --linearOrange: rgba(250, 110, 35, 0.8);
 }
-
 .Title {
-  font-size: 12px;
-}
-body {
-  font-family: "DM Sans", Arial, Helvetica, sans-serif;
-  font-size: 24px;
-  line-height: 1.5;
-  color: var(--black);
+  font-size: 40px;
+  font-style: small;
+  font-family: arial, sans-serif;
 }
 .Logo {
   font-size: 6px;
 }
-
+.Zoom {
+  background-color: black;
+  position: absolute;
+}
 header {
   display: flex;
   align-items: flex-start;
@@ -33,10 +31,35 @@ header {
 }
 
 .Presentation {
-  position: absolute;
+  position: relative;
   display: flex;
-  background-color: grey;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 100px;
+  background-color: white;
+  padding: 70px;
 }
-.Section-Top img {
-  width: 100%;
+
+body {
+  display: flex;
+  align-content: center;
+  font-family: "DM Sans", Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+  color: var(--black);
+  background-color: rgb(242, 242, 242);
+}
+
+.Details-du-Film {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  justify-items: end;
+}
+
+.Release {
+  font-size: 24px;
 }

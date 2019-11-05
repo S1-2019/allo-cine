@@ -3,34 +3,49 @@ import Logo from "./pics/Logo.png";
 import Zoom from "./pics/section-background.png";
 import Affiche from "./pics/affiche-film.png";
 import "./App.css";
+import Cast from "./Components/Cast";
+import Category from "./Components/Category";
+import Date from "./Components/Date";
+import Director from "./Components/Director";
+import Origin from "./Components/Origin";
 
 function App() {
   return (
-    <>
-      <div className="Cinema">
-        <header className="Allo-Cine">
-          <img src={Logo} className="Logo" alt="logo" />
-          <div className="Title">ALLOCINE</div>
-        </header>
-        <body>
+    <div className="Cinema">
+      <header className="Allo-Cine">
+        <img src={Logo} className="Logo" alt="logo" />
+        <div className="Title">
+          <b>ALLOCINE</b>
           <div className="Section-Top">
-            <img src={Zoom} alt="Zoom Affiche du film" />
+            <img src={Zoom} alt="Zoom Affiche du film" />{" "}
           </div>
+        </div>
+      </header>
 
-          <div className="Presentation">
-            <img src={Affiche} alt="Affiche du film" />
-            <div className="Details du Film">
-              <div id="Date"> Date de sortie 27 septembre 1968 (2h21mn) </div>
-              <div id="Director"> De Stanley Kubrick</div>
-              <div id="Cast">
-                {" "}
-                Avec Keir Dullea, Gary Lockwood, William Sylvester{" "}
-              </div>
-              <div id="Category">Genre Science fiction</div>
-              <div id="Origin">Americain, Britannique</div>
+      <body>
+        <div className="Presentation">
+          <img src={Affiche} alt="Affiche du film" />
+          <div className="Details du Film">
+            <div className="container">
+              <Date
+                intro="Date de sortie"
+                day="27 septembre 1968"
+                duration="(2h21mn)"
+              ></Date>
+              <Director intro="De" name="Stanley Kubrick"></Director>
+              <Cast
+                intro="Avec"
+                name="Keir Dullea, Gary Lockwood, William Sylvester"
+              ></Cast>
+
+              <Category intro="Category" name="Science Fiction"></Category>
+              <Origin intro="Nationalites" name="Americains, Britannique" />
             </div>
 
-            <h1> Synopsis et details</h1>
+            <h1>
+              {" "}
+              <b>SYNOPSIS ET DETAILS</b>{" "}
+            </h1>
             <p>
               {" "}
               A l'aube de l'Humanite, dans le desert africain, une tribu de
@@ -52,9 +67,9 @@ function App() {
               risque t-on de decouvrir sur Jupiter?{" "}
             </p>
           </div>
-        </body>
-      </div>
-    </>
+        </div>
+      </body>
+    </div>
   );
 }
 

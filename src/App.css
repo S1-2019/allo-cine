@@ -1,22 +1,37 @@
-.App {
-  text-align: center;
+/* -------------------- IMPORT -------------------- */
+
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:400,700|Space+Mono:400,700&display=swap");
+
+/* -------------------- DEBUG -------------------- */
+
+[debug],
+[debug] * {
+  outline: solid 1px #9400ff;
+  box-shadow: none;
+  filter: none;
 }
 
-.App-logo {
-  height: 40vmin;
+/* -------------------- GLOBAL RULE -------------------- */
+
+:root {
+  --black: #1e1e1e;
+  --grey: #faf9f5;
+  --white: #ffffff;
+  --yellow: #ffcc33;
+  --orange: #f87624;
+  --linearOrange: rgba(250, 110, 35, 0.8);
+  --linearYellow: rgba(255, 200, 50, 0.5);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  font-family: "DM Sans", Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+  color: var(--black);
+}
+
+header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #09d3ac;
+  align-items: flex-start;
+  background-color: rgb(252, 204, 1);
 }

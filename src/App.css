@@ -2,15 +2,6 @@
 
 @import url("https://fonts.googleapis.com/css?family=DM+Sans:400,700|Space+Mono:400,700&display=swap");
 
-/* -------------------- DEBUG -------------------- */
-
-[debug],
-[debug] * {
-  outline: solid 1px #9400ff;
-  box-shadow: none;
-  filter: none;
-}
-
 /* -------------------- GLOBAL RULE -------------------- */
 
 :root {
@@ -20,18 +11,32 @@
   --yellow: #ffcc33;
   --orange: #f87624;
   --linearOrange: rgba(250, 110, 35, 0.8);
-  --linearYellow: rgba(255, 200, 50, 0.5);
 }
 
+.Title {
+  font-size: 12px;
+}
 body {
   font-family: "DM Sans", Arial, Helvetica, sans-serif;
   font-size: 24px;
   line-height: 1.5;
   color: var(--black);
 }
+.Logo {
+  font-size: 6px;
+}
 
 header {
   display: flex;
   align-items: flex-start;
   background-color: rgb(252, 204, 1);
+}
+
+.Presentation {
+  position: absolute;
+  display: flex;
+  background-color: grey;
+}
+.Section-Top img {
+  width: 100%;
 }
